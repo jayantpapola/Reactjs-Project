@@ -1,0 +1,234 @@
+.Navbar2
+{
+    height: 40px;
+    width: 100%;
+    background-color: #232f3e;
+    display: flex;
+}
+.navigations
+{
+    height: 40px;
+    width: 63%;
+    display: flex;
+    color: white;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    font-size: 14px;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav_item
+{
+    margin: 1px;
+    padding: 6px 8px;
+    border-radius: 1px;
+    /* background-color: aquamarine; */
+    /* box-shadow: 0 0 0 1px white;  */
+    cursor: pointer;
+}
+.nav_item:hover
+{
+    box-shadow: 0 0 0 1px white; 
+}
+.nav_blank
+{
+    width: 5%;
+}
+.Navbar_ad
+{
+    width: 32%;
+    height: 40px;
+}
+.Navbar_ad>img
+{
+    height: auto;
+    max-width: 100%;
+}
+
+
+/*Amazon_Menu*/
+.Amazon_Menu
+{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 29%;
+    background-color: white;
+    box-shadow: 5px 0 20px #232f3e46;
+    transform: translateX(-100%);
+    transition: .3s;
+    overflow-x:hidden;
+    z-index: 999;
+}
+.Amazon_Menu.change
+{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 29%;
+    background-color: white;
+    box-shadow: 5px 0 20px #232f3e46;
+    transform: translateX(0%);
+    transition: .3s;
+    overflow: hidden;
+    z-index: 999;
+}
+.Amazon_Menu li
+{
+    list-style: none;
+    padding: 14px 0;
+    padding-left: 30px;
+    width: 100%;
+}
+.menu_acc
+{
+    position: sticky;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.menu_acc>i
+{
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.menu_cross
+{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    left: 85%;
+    cursor: pointer;
+}
+.menu_cross:hover
+{
+    box-shadow: 0 0 0 1px white;
+}
+.main_menu
+{
+    height: 95vh;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+.menu.slideOut
+{
+    transition: .5s;
+    transform: translateX(-100%);
+}
+.menu
+{
+    height: auto;
+    border-bottom: solid 1px #232f3e3f;
+    
+    transition: .5s;
+}
+.inner_menu
+{
+    max-height: 0;
+    border-top: solid 1px #232f3e3f;
+    transition: max-height .3s ;
+    overflow: hidden;
+}
+.inner_menu.dropdown
+{
+    max-height: 400px;
+    border-top: solid 1px #232f3e3f;
+
+}
+.menu ul
+{
+    padding: 0;
+    width: 100%;
+}
+.menu_list
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu_list:hover
+{
+    background-color: #232f3e3a;
+}
+.menu_list i 
+{
+    margin-right: 20px;
+    font-size: 16px;
+    color: gray;
+}
+.menu_heading
+{
+    font-size: 15px;
+}
+.menu_settings
+{
+    margin-bottom: 60px;
+}
+.menu.menu_settings
+{
+    border-bottom: none;
+}
+
+
+
+/*SideMenu*/
+
+.SideMenu
+{   
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    transform: translateX(100%);
+    transition: .5s;
+    overflow-y:hidden;
+}
+.SideMenu.tryy
+{
+    width: 100%;
+    transform: translateX(0%);
+    transition: .5s;
+}
+
+.backToMainMenu
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.backToMainMenu > i
+{
+    margin-right: 10px;
+    padding-bottom: 3px;
+}
+.backToMainMenu:hover
+{
+    background-color: #232f3e3a;
+}
+.Alexa
+{
+    display: block;
+}
+#oneTime
+{
+    border-bottom: solid 1px #232f3e3a;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,134 @@
+.cartProduct
+{
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    max-height: auto;
+    border-top: solid 1px rgb(214, 214, 214);
+    border-bottom: solid 1px rgb(214, 214, 214);
+    padding: 30px  0px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.checkbox
+{
+    max-height: 180px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 5%;
+}
+.checkbox > input
+{
+    height: 15px;
+    width: 15px;
+}
+.cartProduct > img
+{
+    width: 23%;
+    max-height: 180px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.cartProductInfo
+{
+    min-height: 180px;
+    width: 60%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.cartProductName
+{
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.badge
+{
+    margin: 5px 0px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    color: #565959;
+}
+.badge > span
+{
+    position: relative;
+    background: #E47911;
+    border-bottom-right-radius: 10px ;
+    color: #fff;
+    padding: 1px 15px;
+    font-size: 14px;
+}
+.stockAvailability
+{
+    margin: 5px 0px;
+    font-size: 11px;
+    color: green;
+}
+.shippingEligiblity{
+    margin: 5px 0px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    color: #565959;
+}
+.giftCheckbox{
+    margin: 5px 0px;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: #565959;
+}
+.giftCheckbox > span
+{
+    color: darkcyan;
+}
+.cartProductSize
+{
+    font-size: 12px;
+}
+.qtyBtn
+{
+    margin: 5px;
+    padding: 5px 8px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    border: solid 1px lightgrey;
+    box-shadow: 0px 3px 8px rgba(51, 51, 51, 0.1);
+}
+.qtyBtn > select
+{
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+.cartProductFooter
+{
+    display: flex;
+}
+.cartProductFooter > div
+{
+    
+    margin: 15px;
+    font-size: 12px;
+    color: darkcyan;
+    border-left: solid 1.5px lightgray;
+    padding-left: 20px;
+}
+.cartProductFooter > div > p:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.addedCartProductPrice
+{
+    min-height: 180px;
+    width: 10%;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
