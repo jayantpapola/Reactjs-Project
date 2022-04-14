@@ -1,7 +1,6 @@
 import React , {useState}  from 'react'
 import './Footer.css'
 import InnerProduct from './InnerProduct'
-import { Scrollbars } from 'react-custom-scrollbars-2'
 
 
 
@@ -174,9 +173,11 @@ export default function Footer(props) {
                 
         </div>
 
-        <div className="BackToTop">
-            <p>Back To Top</p>
-        </div>
+        
+            <div className="BackToTop">
+                <p>Back To Top</p>
+            </div>
+        
 
         <div className="footerContactSection">
             

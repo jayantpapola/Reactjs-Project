@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './SaleProduct.css'
-import {  useDispatch, useSelector } from 'react-redux'
+import {  useDispatch } from 'react-redux'
 import { addToBasket } from '../action/addToBasket';
 
 export default function SaleProduct(
@@ -15,14 +15,13 @@ export default function SaleProduct(
     }) {
 
         
-        const SellingProduct = useSelector((state)=>state.cartFunction);
-        const ProductInCart = SellingProduct.basket
-        console.log(ProductInCart)
+
+        const [ addPopUp, setAddPopUp] = useState({})
 
         const dispatch = useDispatch();
 
         const AddingProduct = () =>
-            dispatch(
+            {dispatch(
                 addToBasket({
                     id: Math.random(),
                     saleProductInfo : saleProductInfo,
@@ -33,12 +32,22 @@ export default function SaleProduct(
                     saleProductPrice : saleProductPrice,
                     saleProductSize : saleProductSize
                 })
-            )      
+            ) 
+            setAddPopUp({
+                animationName:'showw'
+            })
+            setTimeout(()=>{
+                setAddPopUp({})
+            },600)
+        }     
          
         
 
   return (
     <div className='SaleProduct' >
+        <div className="addedPopUp" style={addPopUp}>
+            <p>item added</p>
+            </div>
         <div className="saleProductInfo">
             <h2>{saleProductInfo}</h2>
         </div>

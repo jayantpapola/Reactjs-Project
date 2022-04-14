@@ -50,12 +50,13 @@
     display: flex;
     align-items:flex-start;
     justify-content: flex-end;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
     font-size: 19px;
     color: #333;
     letter-spacing: 1px;
     transform: translateY(5px);
+    border-top: solid 1px rgb(214, 214, 214);
 }
 
 

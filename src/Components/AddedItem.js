@@ -1,4 +1,4 @@
-import React, {useContext, useStater} from 'react'
+import React, {useContext, useState} from 'react'
 import { useSelector } from 'react-redux';
 import './AddedItem.css'
 import { useDispatch } from 'react-redux';
@@ -22,12 +22,26 @@ export default function AddedItem({
     
     const dispatch = useDispatch();
 
-        
+    const [slideOut, setSlideOut] = useState({})
+
+    function RemoveItem()
+    {
+      setSlideOut({
+        transition :'.3s',
+        transform : 'translateX(-110%)',
+        opacity:'0'
+      })
+      setTimeout(()=>{
+        dispatch(removeFromBasket(id))
+        setSlideOut({})
+      },300)
+      
+    }
 
 
   // const SalePro = useContext(SaleProductContext)
   return (
-    <div className='cartProduct' key={id}>
+    <div className='cartProduct' key={id} style={slideOut}>
             <div className="checkbox">
               <input type="checkbox"/>
             </div>
@@ -62,7 +76,7 @@ export default function AddedItem({
                       <option value={10}/>
                     </select>
                   </button>
-                  <div><p onClick={()=>dispatch(removeFromBasket(id))}>Delete</p></div>
+                  <div><p onClick={RemoveItem}>Delete</p></div>
                   <div><p>Save for later</p></div>
                   <div><p>See more like this</p></div>
                 </div>
