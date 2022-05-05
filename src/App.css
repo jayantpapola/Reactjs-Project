@@ -7,8 +7,18 @@
 body
 {
   background-color: rgb(231, 231, 231);
+  
 }
 Link
 {
   text-decoration: none;
+}
+::-webkit-scrollbar-track
+{
+  width: 2px;
+}
+::-webkit-scrollbar-thumb
+{
+  background-color: red;
+  color: red;
 }

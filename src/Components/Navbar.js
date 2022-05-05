@@ -55,7 +55,7 @@ function Navbar() {
           
           <div className="menu_acc" >
             <div className="menu_cross" onClick={mainMenuHide}>X</div>
-            <i className="fa-solid fa-circle-user"></i><p id='menu_acc_p'>Hello,Sign in</p>
+            <i className="fa-solid fa-circle-user"></i><p id='menu_acc_p'>Hello, Jayant</p>
           </div>
           
           {/* INNER MENU */}

@@ -35,6 +35,9 @@ function removeBlack()
   })
 }
 
+const [category, setCategory] = useState('All')
+
+
 
 
 const SellingProduct = useSelector((state)=>state.cartFunction);
@@ -86,7 +89,8 @@ const SellingProduct = useSelector((state)=>state.cartFunction);
 
           <div className="searchBar" >
             <div id='search_all_sec'>
-                <p><select id='search_select'>
+                <p><select id='search_select' value={category} onChange={(e)=>setCategory(e.target.value)}>
+                    <option>All</option>
                     <option>All</option>
                     <option>All</option>
                     <option>All</option>

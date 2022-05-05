@@ -247,7 +247,7 @@
   font-weight: lighter;
   border-right: #bebebe solid 1px;
   height: 40px;
-  min-width: max-content;
+  min-width: fit-content;
   background-color:rgb(240, 240, 240);
   border-radius:  3px 0 0 3px ;
 }
@@ -265,6 +265,21 @@
   border-radius:  0 3px 3px 0;
   cursor: pointer;
 }
+#search_icon:hover
+{
+  height: 45px;
+  box-shadow: 0 0 10px orange;
+}
+#search_icon:hover i
+{
+  transform: rotate(360deg);
+}
+
+#search_icon > i
+{
+  transition: .5s;
+}
+
 .country_region
 {
   padding: 15px;
